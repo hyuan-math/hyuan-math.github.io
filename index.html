@@ -1,22 +1,39 @@
-
-
 <html>
 <head>
 <title>Hang Yuan</title>
+<style>
+  .paper-list {
+    list-style-type: disc; /* 使用圆点作为列表项标记 */
+    padding-left: 20px; /* 设置列表的左内边距，为标记留出空间 */
+    line-height: 2; /* 行间距为字体大小的两倍 */
+    font-size: 105%; /* 字体大小 */
+  }
+
+  /* 设置每个论文项的底部边框样式和底部外边距 */
+  .paper-item {
+    border-bottom: 1px solid #ccc; /* 在列表项底部添加一条灰色细线 */
+    margin-bottom: -7px; /* 设置列表项之间的底部外边距 */
+  }
+
+  /* 设置内部div，用于灵活布局和内边距 */
+  .paper-div {
+    display: flex; /* 使用flex布局，让子元素水平排列 */
+    justify-content: space-between; /* 子元素之间保持平均分布 */
+    padding: 10px 0px 0px 0px; /* 设置顶部和底部内边距，以使内容垂直居中 */
+  }
+</style>
+
 <script type="text/x-mathjax-config">
   MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
 </script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-</head>
-
 
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <font size="4">
 
-
+</head>
 <body>
 <h1>Hang Yuan</h1>
-
 <p>I am a Boas Assistant Professor of Mathematics at <a href="https://www.math.northwestern.edu/people/faculty/#Y" target="_blank">Northwestern University</a>, and my research mentor is Professor <a href="https://sites.math.northwestern.edu/~zaslow/" target="_blank">Eric Zaslow</a>. I graduated from Stony Brook University under the supervision of Professor <a href="http://scgp.stonybrook.edu/people/faculty/bios/kenji-fukaya" target="_blank">Kenji Fukaya</a>.</p>
 
 <ul>
@@ -35,51 +52,104 @@
 
 
 
-
 <h3>Papers</h3>
+<ul class="paper-list">
+<li class="paper-item">
+  <div class="paper-div">
+    <span style="flex: 5;">Lagrangian Floer cohomology over affinoid coefficients (in preparation)</span>
+    <span style="flex: 1;"></span>
+    <span style="flex: 1;"></span>
+    <span style="flex: 1;"></span>
+  </div>
+</li>
 
-<ul style="line-height:2; font-size: 105%">
+<li class="paper-item">
+  <div class="paper-div">
+    <span style="flex: 5;">Non-archimedean analytic continuation of unobstructedness</span>
+    <span style="flex: 1;"><a href="https://arxiv.org/abs/2401.02577" target="_blank">arXiv</a></span>
+    <span style="flex: 1;"></span>
+    <span style="flex: 1;"></span>
+  </div>
+</li>
+
+<li class="paper-item">
+  <div class="paper-div">
+    <span style="flex: 5;">Family Floer SYZ conjecture for $A_n$ singularity</span>
+    <span style="flex: 1;"><a href="https://arxiv.org/abs/2305.13554" target="_blank">arXiv</a></span>
+    <span style="flex: 1;">
+      <a href="./slide/SYZ_A_n.pdf" target="_blank">slide 1</a>
+    </span>
+    <span style="flex: 1;"></span>
+    </div>
+</li>
+
+<li class="paper-item">
+  <div class="paper-div">
+    <span style="flex: 5;">Family Floer SYZ singularities for the conifold transition</span>
+    <span style="flex: 1;"><a href="https://arxiv.org/abs/2212.13948" target="_blank">arXiv</a></span>
+    <span style="flex: 1;">
+      <a href="./slide/conifold_note.pdf" target="_blank">slide 1</a>
+    </span>
+    <span style="flex: 1;"></span>
+  </div>
+</li>
+
+<li class="paper-item">
+  <div class="paper-div">
+    <span style="flex: 5;">Family Floer mirror space for local SYZ singularities</span>
+    <span style="flex: 1;">
+      <a href="https://arxiv.org/abs/2206.04652" target="_blank">arXiv</a>
+    </span>
+    <span style="flex: 1;">
+      <a href="./slide/local-SYZ.pdf" target="_blank">slide 1</a>,
+      <a href="./slide/local-SYZ-Simons.pdf" target="_blank">slide 2</a>
+    </span>
+    <span style="flex: 1;">
+      <a href="https://www.youtube.com/watch?v=UVOhhO7oJTE&list=PLQsnDGjTk2vZyxF30ypq5bMpJyoqes8J5&index=16" target="_blank">video 1</a>,
+      <a href="https://www.simonsfoundation.org/event/simons-collaboration-on-homological-mirror-symmetry-annual-meeting-2022/" target="_blank">video 2</a>
+    </span>
+  </div>
+</li>
+
+<li class="paper-item">
+  <div class="paper-div">
+    <span style="flex: 5;">Family Floer superpotential’s critical values are eigenvalues of quantum product by $c_1$</span>
+    <span style="flex: 1;"><a href="https://arxiv.org/abs/2112.13537" target="_blank">arXiv</a></span>
+    <span style="flex: 1;">
+      <a href="./slide/local-SYZ.pdf" target="_blank">slide (in part)</a>,
+    </span>
+    <span style="flex: 1;"></span>
+  </div>
+</li>
 
 
+<li class="paper-item">
+  <div class="paper-div">
+    <span style="flex: 5;">Disk counting and wall-crossing phenomenon via family Floer theory</span>
+    <span style="flex: 1;">
+      <a href="https://arxiv.org/abs/2101.01379" target="_blank">arXiv</a>
+    </span>
+    <span style="flex: 1;">
+      <a href="./slide/disk-count.pdf" target="_blank">slide</a>
+    </span>
+    <span style="flex: 1;">
+      <a href="https://www.youtube.com/watch?v=THlcr00OgHE&amp;t=2s" target="_blank">video</a>
+    </span>
+  </div>
+</li>
 
+<li class="paper-item">
+  <div class="paper-div">
+    <span style="flex: 5;">Family Floer program and non-archimedean SYZ mirror construction</span>
+    <span style="flex: 1;"><a href="https://arxiv.org/abs/2003.06106" target="_blank">arXiv</a></span>
+    <span style="flex: 1;"><a href="./slide/family-floer.pdf" target="_blank">slide</a></span>
+    <span style="flex: 1;">
+      <a href="https://www.youtube.com/watch?v=WJAjVojXk5w" target="_blank">video</a>,
+      <a href="https://www.proquest.com/docview/2555414281?pq-origsite=gscholar&fromopenview=true" target="_blank">thesis</a>
+    </span>
+  </div>
+</li>
 
-<li>Lagrangian Floer cohomology with affinoid coefficients (in preparation)
-
-<li>Non-archimedean analytic continuation of unobstructedness
-<a href="https://arxiv.org/abs/2401.02577" target="_blank">(arXiv)</a>
-
-
-<li>Family Floer SYZ conjecture for $A_n$ singularity
-<a href="https://arxiv.org/abs/2305.13554" target="_blank">(arXiv)</a>
-
-<li>Family Floer SYZ singularities for the conifold transition
-<a href="https://arxiv.org/abs/2212.13948" target="_blank">(arXiv)</a>
-
-<li>Family Floer mirror space for local SYZ singularities  
-<a href="https://arxiv.org/abs/2206.04652" target="_blank">(arXiv)</a>
-<a href="./slide/local-SYZ.pdf" target="_blank">(slide)</a>
-<a href="https://www.youtube.com/watch?v=UVOhhO7oJTE&list=PLQsnDGjTk2vZyxF30ypq5bMpJyoqes8J5&index=16" target="_blank">(video)</a>
-<a href="./slide/local-SYZ-Simons.pdf" target="_blank">(slide-2)</a>
-<a href="https://www.simonsfoundation.org/event/simons-collaboration-on-homological-mirror-symmetry-annual-meeting-2022/" target="_blank">(video-2)</a>
-
-<li>Family Floer superpotential&rsquo;s critical values are eigenvalues of quantum product by $c_1$ 
-</sub>  <a href="https://arxiv.org/abs/2112.13537" target="_blank">(arXiv)</a>
-
-
-
-<li>Disk counting and wall-crossing phenomenon via family Floer theory 
-<a href="https://arxiv.org/abs/2101.01379" target="_blank">(arXiv)</a>
-<a href="./slide/disk-count.pdf" target="_blank">(slide)</a>
-<a href="https://www.youtube.com/watch?v=THlcr00OgHE&amp;t=2s" target="_blank">(video)</a></li>
-
-
-
-<li>Family Floer program and non-archimedean SYZ mirror construction 
-<a href="https://arxiv.org/abs/2003.06106" target="_blank">(arXiv)</a>
-<a href="./slide/family-floer.pdf" target="_blank">(slide)</a>
-<a href="https://www.youtube.com/watch?v=WJAjVojXk5w" target="_blank">(video)</a>
-<a href="https://www.proquest.com/docview/2555414281?pq-origsite=gscholar&amp;fromopenview=true" target="_blank">(thesis)</a></li>
 
 </ul>
-
 </html>
