@@ -25,14 +25,17 @@
   /* 新增的CSS样式，用于定位和调整右上角图片的大小 */
   .photo-container {
     position: absolute;
-    top: 10px; /* 距离顶部10像素 */
-    right: 10px; /* 距离右边10像素 */
+    top: 20px; /* 距离顶部20像素 */
+    right: 20px; /* 距离右边20像素 */
+    z-index: 10; /* 确保图片在其他内容之上 */
   }
 
   .my-photo {
-    width: 100px; /* 设置图片宽度为100像素，可以根据需要调整 */
+    width: 200px; /* 设置图片宽度为100像素，可以根据需要调整 */
     height: auto; /* 高度自动调整，保持比例 */
   }
+
+  
 </style>
 
 <script type="text/x-mathjax-config">
