@@ -21,6 +21,18 @@
     justify-content: space-between; /* 子元素之间保持平均分布 */
     padding: 10px 0px 0px 0px; /* 设置顶部和底部内边距，以使内容垂直居中 */
   }
+
+  /* 新增的CSS样式，用于定位和调整右上角图片的大小 */
+  .photo-container {
+    position: absolute;
+    top: 10px; /* 距离顶部10像素 */
+    right: 10px; /* 距离右边10像素 */
+  }
+
+  .my-photo {
+    width: 100px; /* 设置图片宽度为100像素，可以根据需要调整 */
+    height: auto; /* 高度自动调整，保持比例 */
+  }
 </style>
 
 <script type="text/x-mathjax-config">
@@ -31,8 +43,18 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <font size="4">
 
+
+  
 </head>
 <body>
+  <!-- 新增的图片容器 -->
+<div class="photo-container">
+    <img src="photo.jpg" alt="My Photo" class="my-photo">
+</div>
+
+
+
+  
 <h1>Hang Yuan</h1>
 <p>I am a tenure-track Assistant Professor at <a href="https://www.bimsa.cn/wzsy" target="_blank">BIMSA</a>. Previously, I served as a Boas Assistant Professor of Mathematics at <a href="https://www.math.northwestern.edu/people/faculty/#Y" target="_blank">Northwestern University</a>, where I was mentored by Professor <a href="https://sites.math.northwestern.edu/~zaslow/" target="_blank">Eric Zaslow</a>. I earned my Ph.D from Stony Brook University under the supervision of Professor <a href="http://scgp.stonybrook.edu/people/faculty/bios/kenji-fukaya" target="_blank">Kenji Fukaya</a>.</p>
 
