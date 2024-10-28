@@ -18,10 +18,9 @@
   /* 设置内部div，用于灵活布局和内边距 */
   .paper-div {
     display: flex; /* 使用flex布局，让子元素水平排列 */
-    justify-content: 
-/*       space-between;  */
+    justify-content: space-between;  
     /* 子元素之间保持平均分布 */
-    padding: 5px 5px 0px 0px; /* 设置顶部和底部内边距，以使内容垂直居中 */
+    padding: 8px 3px 0px 0px; /* 设置顶部和底部内边距，以使内容垂直居中 */
     font-size: 85%;  /* 整体缩小字体大小 */
   }
 
@@ -85,14 +84,18 @@
 
 <h3>Papers</h3>
 <ul class="paper-list">
-<li class="paper-item">
-  <div class="paper-div">
+
+
+<!-- <li class="paper-item">
+  <div class="paper-div" style="vertical-align: middle;">
     <span style="flex: 5;">Lagrangian Floer cohomology over affinoid coefficients (in preparation)</span>
-    <span style="flex: 1;"></span>
+    <span style="flex: 4; font-family: 'Times', serif; font-size: 85%; vertical-align: bottom;">
+    </span>
+    <span style="flex: 0.6;"></span>
     <span style="flex: 1;"></span>
     <span style="flex: 1;"></span>
   </div>
-</li>
+</li> -->
 
 <!-- <ul class="paper-list">
 <li class="paper-item">
@@ -104,10 +107,15 @@
   </div>
 </li> -->
 
+
 <li class="paper-item">
-  <div class="paper-div">
+  <div class="paper-div" style="vertical-align: middle;">
     <span style="flex: 5;">Non-archimedean analytic continuation of unobstructedness</span>
-    <span style="flex: 1;"><a href="https://arxiv.org/abs/2401.02577" target="_blank">arXiv</a></span>
+    <span style="flex: 4; font-family: 'Times', serif; font-size: 85%; vertical-align: bottom;">
+    </span>
+    <span style="flex: 0.6;">
+      <a href="https://arxiv.org/abs/2401.02577" target="_blank">arXiv</a>
+    </span>
     <span style="flex: 1;">
       <a href="./slide/Unobs.pdf" target="_blank">slide</a>
     </span>
@@ -116,20 +124,29 @@
 </li>
 
 <li class="paper-item">
-  <div class="paper-div">
+  <div class="paper-div" style="vertical-align: middle;">
     <span style="flex: 5;">Family Floer SYZ conjecture for $A_n$ singularity</span>
-    <span style="flex: 1;"><a href="https://arxiv.org/abs/2305.13554" target="_blank">arXiv</a></span>
+    <span style="flex: 4; font-family: 'Times', serif; font-size: 85%; vertical-align: bottom;">
+    </span>
+    <span style="flex: 0.6;">
+      <a href="https://arxiv.org/abs/2305.13554" target="_blank">arXiv</a>
+    </span>
     <span style="flex: 1;">
       <a href="./slide/SYZ_A_n.pdf" target="_blank">slide</a>
     </span>
     <span style="flex: 1;"></span>
-    </div>
+  </div>
 </li>
 
+
 <li class="paper-item">
-  <div class="paper-div">
+  <div class="paper-div" style="vertical-align: middle;">
     <span style="flex: 5;">Family Floer SYZ singularities for the conifold transition</span>
-    <span style="flex: 1;"><a href="https://arxiv.org/abs/2212.13948" target="_blank">arXiv</a></span>
+    <span style="flex: 4; font-family: 'Times', serif; font-size: 85%; vertical-align: bottom;">
+    </span>
+    <span style="flex: 0.6;">
+      <a href="https://arxiv.org/abs/2212.13948" target="_blank">arXiv</a>
+    </span>
     <span style="flex: 1;">
       <a href="./slide/conifold_note.pdf" target="_blank">slide</a>
     </span>
@@ -137,10 +154,14 @@
   </div>
 </li>
 
+
 <li class="paper-item">
-  <div class="paper-div">
-    <span style="flex: 5;">Family Floer mirror space for local SYZ singularities &nbsp;&nbsp;(<i style="font-size: 90%;">Accepted by Forum of Mathematics, Sigma</i>)  </span>
-    <span style="flex: 1;">
+  <div class="paper-div" style="vertical-align: middle;">
+    <span style="flex: 5;">Family Floer mirror space for local SYZ singularities </span>
+    <span style="flex: 4; font-family: 'Times', serif; font-size: 77%; vertical-align: bottom;">
+	<i style="position: relative; top: 5px;">(Accepted by Forum of Mathematics, Sigma)</i>
+    </span>
+    <span style="flex: 0.6;">
       <a href="https://arxiv.org/abs/2206.04652" target="_blank">arXiv</a>
     </span>
     <span style="flex: 1;">
@@ -154,10 +175,16 @@
   </div>
 </li>
 
+
 <li class="paper-item">
-  <div class="paper-div">
-    <span style="flex: 5;">Family Floer superpotential’s critical values are eigenvalues of quantum product by $c_1$  &nbsp;&nbsp;(<i style="font-size: 90%;">Accepted by Selecta</i>)  </span>
-    <span style="flex: 1;"><a href="https://arxiv.org/abs/2112.13537" target="_blank">arXiv</a></span>
+  <div class="paper-div" style="vertical-align: middle;">
+    <span style="flex: 5;">Family Floer superpotential’s critical values are eigenvalues of quantum product by $c_1$  </span>
+    <span style="flex: 4; font-family: 'Times', serif; font-size: 77%; vertical-align: bottom;">
+	<i style="position: relative; top: 5px;">(Accepted by Selecta)</i>
+    </span>
+    <span style="flex: 0.6;">
+      <a href="https://arxiv.org/abs/2112.13537" target="_blank">arXiv</a>
+    </span>
     <span style="flex: 1;">
       <a href="./slide/local-SYZ-Simons.pdf" target="_blank">slide (part)</a>
     </span>
@@ -168,9 +195,9 @@
 
 <li class="paper-item">
   <div class="paper-div" style="vertical-align: middle;">
-    <span style="flex: 4;">Disk counting and wall-crossing phenomenon via family Floer theory</span>
-    <span style="flex: 4; font-family: 'Times', serif; font-size: 85%; vertical-align: bottom;">
-      <i>Journal of Fixed Point Theory and Applications</i>, 2022, 24(4): 77
+    <span style="flex: 5;">Disk counting and wall-crossing phenomenon via family Floer theory</span>
+    <span style="flex: 4; font-family: 'Times', serif; font-size: 77%; vertical-align: bottom;">
+      <i style="position: relative; top: 5px;">Journal of Fixed Point Theory and Applications, 2022, 24(4): 77</i>
     </span>
     <span style="flex: 0.6;">
       <a href="https://arxiv.org/abs/2101.01379" target="_blank">arXiv</a>
@@ -187,8 +214,8 @@
   
 <li class="paper-item">
   <div class="paper-div" style="vertical-align: middle;">
-    <span style="flex: 4;">Family Floer program and non-archimedean SYZ mirror construction</span>
-    <span style="flex: 4;"></span> <!-- 留空的期刊信息 -->
+    <span style="flex: 5;">Family Floer program and non-archimedean SYZ mirror construction</span>
+    <span style="flex: 4;"></span> 
     <span style="flex: 0.6;">
       <a href="https://arxiv.org/abs/2003.06106" target="_blank">arXiv</a>
     </span>
