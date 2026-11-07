@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hang Yuan &mdash; Mathematics</title>
+<meta name="description" content="Hang Yuan, tenure-track Assistant Professor at BIMSA. Research on the SYZ conjecture, family Floer theory, non-Archimedean analytic geometry, and A-infinity structures.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='5' fill='%23111111'/%3E%3Ctext x='16' y='23' font-family='Georgia,serif' font-size='19' fill='%23ffffff' text-anchor='middle'%3EH%3C/text%3E%3C/svg%3E">
+
+<style>
+  :root {
+    --ink: #111;
+    --rule: #d4d4d4;
+    --accent: #1a4f8a;
+
+    /* 列间额外留白，用 rem（=18px）保证与元素自身字号无关 */
+    --gap-title-venue: 1.6rem;   /* 标题 → 期刊 */
+    --gap-venue-arxiv: 10rem;    /* 期刊 → arXiv */
+  }
+
+  * { box-sizing: border-box; }
+
+  html { -webkit-text-size-adjust: 100%; }
+
+  body {
+    margin: 0;
+    font-size: 18px;
+    color: var(--ink);
+    background: #fff;
+  }
+
+  /* 铺满窗口，不设宽度上限（与原版一致） */
+  main {
+    max-width: none;
+    margin: 0;
+    padding: 12px 16px 64px;
+  }
+
+  a {
+    color: var(--accent);
+    text-decoration: none;
+  }
+  a:hover { text-decoration: underline; }
+
+  /* ---------- photo ---------- */
+  .photo-container {
+    float: right;
+    margin: 0 0 12px 26px;
+  }
+  .my-photo {
+    display: block;
+    width: 300px;
+    max-width: 100%;
+    height: auto;
+    border-radius: 2px;
+  }
+
+  /* ---------- headings & text ---------- */
+  h1 {
+    margin: 0 0 0.35em;
+    font-size: 2em;
+    font-weight: 700;
+    letter-spacing: 0.01em;
+  }
+  h2 {
+    margin: 2em 0 0.5em;
+    font-size: 1.32em;
+    font-weight: 700;
+  }
+
+  .bio { margin: 0 0 0.85em; }
+
+  .meta {
+    margin: 0 0 1em;
+    padding: 0;
+    list-style: none;
+  }
+  .meta li { margin: 0.2em 0; }
+
+  .email-img {
+    height: 1em;
+    width: auto;
+    vertical-align: -0.14em;
+  }
+
+  /* ---------- papers ---------- */
+  .papers {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 105%;   /* 原版 .paper-list */
+    line-height: 2;    /* 原版 .paper-list */
+  }
+
+  .paper {
+    padding: 2px 0;
+    border-bottom: 1px solid var(--rule);
+  }
+  .paper:first-child { border-top: 1px solid var(--rule); }
+
+  .paper-row {
+    display: flex;
+    align-items: baseline;
+    gap: 8px;
+    font-size: 85%;    /* 原版 .paper-div */
+  }
+
+  .paper-title {
+    flex: 11.3 1 0;
+    min-width: 0;
+  }
+
+  .paper-venue {
+    flex: 6.4 1 0;
+    min-width: 0;
+    margin-left: var(--gap-title-venue);
+    font-size: 0.9em;
+    line-height: 1.4;
+  }
+
+  .link-arxiv,
+  .link-more {
+    font-size: 0.9em;
+  }
+  .link-arxiv {
+    flex: 0.9 1 0;
+    margin-left: var(--gap-venue-arxiv);
+  }
+  .link-more  { flex: 3.1 1 0; min-width: 0; }
+
+  /* slide / video 之间的浅色分隔点 */
+  .sep { color: #b0b0b0; margin: 0 0.42em; }
+
+  /* 中等宽度：缩小列间留白，避免四列被挤压 */
+  @media (max-width: 1400px) {
+    :root {
+      --gap-title-venue: 1.2rem;
+      --gap-venue-arxiv: 5rem;
+    }
+  }
+
+  /* ---------- narrow screens ---------- */
+  @media (max-width: 700px) {
+    body { font-size: 17px; }
+
+    main { padding: 22px 16px 48px; }
+
+    .photo-container { margin: 0 0 8px 16px; }
+    .my-photo { width: 132px; }
+
+    .paper-row {
+      flex-wrap: wrap;
+      gap: 1px 10px;
+      font-size: 92%;
+    }
+    .paper-title { flex: 1 1 100%; }
+    .paper-venue {
+      flex: 1 1 100%;
+      margin-left: 0;
+    }
+
+    .link-arxiv,
+    .link-more {
+      flex: 0 0 auto;
+    }
+    /* 窄屏整行换行后不需要这个缩进 */
+    .link-arxiv { margin-left: 0; }
+
+    /* 空链接格在换行后会留下空隙 */
+    .paper-row > span:empty { display: none; }
+  }
+</style>
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+</script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+</head>
+
+<body>
+<main>
+
+  <div class="photo-container">
+    <img src="photo.jpg" alt="Hang Yuan" class="my-photo">
+  </div>
+
+  <h1>Hang Yuan</h1>
+
+  <p class="bio">I am a tenure-track Assistant Professor at <a href="https://www.bimsa.cn/groups/analysis-and-geometry.html" target="_blank" rel="noopener">BIMSA</a>.</p>
+
+  <p class="bio">Previously, I was a Boas Assistant Professor of Mathematics at Northwestern University, where I was mentored by Professor <a href="https://sites.math.northwestern.edu/~zaslow/" target="_blank" rel="noopener">Eric Zaslow</a>. I earned my Ph.D. from Stony Brook University under the supervision of Professor <a href="http://scgp.stonybrook.edu/people/faculty/bios/kenji-fukaya" target="_blank" rel="noopener">Kenji Fukaya</a>.</p>
+
+  <ul class="meta">
+    <li><strong>Email</strong>: <img src="./email_address.png" alt="email address" class="email-img"></li>
+  </ul>
+
+  <h2>Research interests</h2>
+
+  <p class="bio">My primary research aims to develop a precise mathematical formulation of the SYZ conjecture by utilizing methods from non-Archimedean analytic geometry, homotopy theory of $A_\infty$ structures, and family Floer theory for quantum correction.</p>
+
+  <p class="bio">I am also interested in topics in noncommutative geometry and algebraic topology, such as operads, Hochschild (co)homology, and loop spaces.</p>
+
+  <h2>Papers</h2>
+
+  <ul class="papers">
+
+    <li class="paper">
+      <div class="paper-row">
+        <span class="paper-title">Koszul duality and homotopy algebras for operads over quivers</span>
+        <span class="paper-venue"></span>
+        <span class="link-arxiv"><a href="https://arxiv.org/abs/2611.06165v1" target="_blank" rel="noopener">arXiv</a></span>
+        <span class="link-more"></span>
+      </div>
+    </li>
+
+    <li class="paper">
+      <div class="paper-row">
+        <span class="paper-title">Family Floer SYZ mirror algorithm for the Grassmannian $Gr(2,4)$ (with Zekai Yu)</span>
+        <span class="paper-venue"></span>
+        <span class="link-arxiv"><a href="https://arxiv.org/abs/2607.03843" target="_blank" rel="noopener">arXiv</a></span>
+        <span class="link-more"></span>
+      </div>
+    </li>
+
+    <li class="paper">
+      <div class="paper-row">
+        <span class="paper-title">Existence of pseudo-holomorphic disks via non-archimedean disk potentials</span>
+        <span class="paper-venue"></span>
+        <span class="link-arxiv"><a href="https://arxiv.org/abs/2606.13122v1" target="_blank" rel="noopener">arXiv</a></span>
+        <span class="link-more"><a href="./slide/Disk-Tsinghua.pdf" target="_blank" rel="noopener">slide</a></span>
+      </div>
+    </li>
+
+    <li class="paper">
+      <div class="paper-row">
+        <span class="paper-title">Higher operad structure for Fukaya categories</span>
+        <span class="paper-venue"></span>
+        <span class="link-arxiv"><a href="https://arxiv.org/abs/2603.08039" target="_blank" rel="noopener">arXiv</a></span>
+        <span class="link-more"></span>
+      </div>
+    </li>
+
+    <li class="paper">
+      <div class="paper-row">
+        <span class="paper-title">Open-Closed Hochschild Homology and the Relative Disk Mapping Space (with Yi Wang)</span>
+        <span class="paper-venue"></span>
+        <span class="link-arxiv"><a href="https://arxiv.org/abs/2511.05010" target="_blank" rel="noopener">arXiv</a></span>
+        <span class="link-more"><a href="./slide/OCHA-Purdue.pdf" target="_blank" rel="noopener">slide</a></span>
+      </div>
+    </li>
+
+    <li class="paper">
+      <div class="paper-row">
+        <span class="paper-title">Cyclic brace relation and BV structure on open-closed Hochschild cohomology</span>
+        <span class="paper-venue"></span>
+        <span class="link-arxiv"><a href="https://arxiv.org/abs/2511.04095" target="_blank" rel="noopener">arXiv</a></span>
+        <span class="link-more"></span>
+      </div>
+    </li>
+
+    <li class="paper">
+      <div class="paper-row">
+        <span class="paper-title">An open-closed string analogue of Hochschild cohomology</span>
+        <span class="paper-venue"></span>
+        <span class="link-arxiv"><a href="https://arxiv.org/abs/2410.20888" target="_blank" rel="noopener">arXiv</a></span>
+        <span class="link-more"></span>
+      </div>
+    </li>
+
+    <li class="paper">
+      <div class="paper-row">
+        <span class="paper-title">Non-archimedean analytic continuation of unobstructedness</span>
+        <span class="paper-venue"><i><a href="https://doi.org/10.4171/qt/237" target="_blank" rel="noopener">Quantum Topol.</a> (2025)</i></span>
+        <span class="link-arxiv"><a href="https://arxiv.org/abs/2401.02577" target="_blank" rel="noopener">arXiv</a></span>
+        <span class="link-more"><a href="./slide/Unobs.pdf" target="_blank" rel="noopener">slide</a></span>
+      </div>
+    </li>
+
+    <li class="paper">
+      <div class="paper-row">
+        <span class="paper-title">Family Floer SYZ conjecture for $A_n$ singularity</span>
+        <span class="paper-venue"><i><a href="https://doi.org/10.4310/bpam.260327180755" target="_blank" rel="noopener">Beijing J. Pure Appl. Math.</a>, 2026, 3(2): 417&ndash;489</i></span>
+        <span class="link-arxiv"><a href="https://arxiv.org/abs/2305.13554" target="_blank" rel="noopener">arXiv</a></span>
+        <span class="link-more"><a href="./slide/SYZ_A_n.pdf" target="_blank" rel="noopener">slide</a></span>
+      </div>
+    </li>
+
+    <li class="paper">
+      <div class="paper-row">
+        <span class="paper-title">Family Floer SYZ singularities for the conifold transition</span>
+        <span class="paper-venue"><i>Accepted by Kyoto Journal of Mathematics</i></span>
+        <span class="link-arxiv"><a href="https://arxiv.org/abs/2212.13948" target="_blank" rel="noopener">arXiv</a></span>
+        <span class="link-more"><a href="./slide/conifold_note.pdf" target="_blank" rel="noopener">slide</a></span>
+      </div>
+    </li>
+
+    <li class="paper">
+      <div class="paper-row">
+        <span class="paper-title">Family Floer mirror space for local SYZ singularities</span>
+        <span class="paper-venue"><i><a href="https://doi.org/10.1017/fms.2024.107" target="_blank" rel="noopener">Forum Math. Sigma</a> (2024), Vol. 12: e119 1&ndash;37</i></span>
+        <span class="link-arxiv"><a href="https://arxiv.org/abs/2206.04652" target="_blank" rel="noopener">arXiv</a></span>
+        <span class="link-more"><a href="./slide/local-SYZ.pdf" target="_blank" rel="noopener">slide 1</a>, <a href="./slide/local-SYZ-Simons.pdf" target="_blank" rel="noopener">2</a> <span class="sep">&middot;</span> <a href="https://www.youtube.com/watch?v=UVOhhO7oJTE&amp;list=PLQsnDGjTk2vZyxF30ypq5bMpJyoqes8J5&amp;index=16" target="_blank" rel="noopener">video 1</a>, <a href="https://www.simonsfoundation.org/event/simons-collaboration-on-homological-mirror-symmetry-annual-meeting-2022/" target="_blank" rel="noopener">2</a></span>
+      </div>
+    </li>
+
+    <li class="paper">
+      <div class="paper-row">
+        <span class="paper-title">Family Floer superpotential&rsquo;s critical values are eigenvalues of quantum product by $c_1$</span>
+        <span class="paper-venue"><i><a href="https://doi.org/10.1007/s00029-024-01012-7" target="_blank" rel="noopener">Selecta Mathematica</a>, 2025, 31(1): 13</i></span>
+        <span class="link-arxiv"><a href="https://arxiv.org/abs/2112.13537" target="_blank" rel="noopener">arXiv</a></span>
+        <!-- 这份讲稿同时覆盖 next 条目，与下一条共用，勿当作重复删除 -->
+        <span class="link-more"><a href="./slide/local-SYZ-Simons.pdf" target="_blank" rel="noopener">slide</a></span>
+      </div>
+    </li>
+
+    <li class="paper">
+      <div class="paper-row">
+        <span class="paper-title">Disk counting and wall-crossing phenomenon via family Floer theory</span>
+        <span class="paper-venue"><i><a href="https://doi.org/10.1007/s11784-022-00994-1" target="_blank" rel="noopener">J. Fixed Point Theory Appl.</a>, 2022, 24(4): 77</i></span>
+        <span class="link-arxiv"><a href="https://arxiv.org/abs/2101.01379" target="_blank" rel="noopener">arXiv</a></span>
+        <span class="link-more"><a href="./slide/disk-count.pdf" target="_blank" rel="noopener">slide</a> <span class="sep">&middot;</span> <a href="https://www.youtube.com/watch?v=THlcr00OgHE&amp;t=2s" target="_blank" rel="noopener">video</a></span>
+      </div>
+    </li>
+
+    <li class="paper">
+      <div class="paper-row">
+        <span class="paper-title">Family Floer program and non-archimedean SYZ mirror construction</span>
+        <span class="paper-venue"></span>
+        <span class="link-arxiv"><a href="https://arxiv.org/abs/2003.06106v3" target="_blank" rel="noopener">arXiv</a></span>
+        <span class="link-more"><a href="./slide/family-floer.pdf" target="_blank" rel="noopener">slide</a> <span class="sep">&middot;</span> <a href="https://www.youtube.com/watch?v=WJAjVojXk5w" target="_blank" rel="noopener">video</a>, <a href="https://www.proquest.com/docview/2555414281?pq-origsite=gscholar&amp;fromopenview=true" target="_blank" rel="noopener">thesis</a></span>
+      </div>
+    </li>
+
+  </ul>
+
+</main>
+</body>
+</html>
